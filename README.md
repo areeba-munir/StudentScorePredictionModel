@@ -1,11 +1,11 @@
 # Student Score Prediction Model
 
-## 📌 Project Overview
+##  Project Overview
 This project focuses on predicting students' exam scores based on various factors such as study hours, attendance, sleep, motivation, and other academic and environmental factors. The goal is to build a **machine learning regression model** that can estimate students' performance and provide insights into which factors contribute most to exam success.
 
 ---
 
-## 🗂️ Folder Structure
+##  Folder Structure
 StudentScorePredictionModel/
 │
 ├── StudentScorePrediction.ipynb # Main Jupyter Notebook with EDA, preprocessing, and model training
@@ -16,7 +16,7 @@ StudentScorePredictionModel/
 
 ---
 
-## 🧰 Tools & Libraries
+##  Tools & Libraries
 - Python 3.x  
 - Pandas  
 - NumPy  
@@ -30,7 +30,7 @@ Optional (for advanced models):
 
 ---
 
-## 📊 Dataset Description
+##  Dataset Description
 The dataset used is **Student Performance Factors** (Kaggle), containing features such as:
 
 | Feature | Description |
@@ -57,7 +57,7 @@ The dataset used is **Student Performance Factors** (Kaggle), containing feature
 
 ---
 
-## 🔧 Project Steps
+##  Project Steps
 
 1. **Data Loading**
    - Load the CSV dataset into a Pandas DataFrame.
@@ -82,7 +82,7 @@ The dataset used is **Student Performance Factors** (Kaggle), containing feature
 
 ---
 
-## 📈 Results
+##  Results
 
 | Model | R² Score | MAE | RMSE |
 |-------|----------|-----|------|
@@ -94,7 +94,7 @@ The dataset used is **Student Performance Factors** (Kaggle), containing feature
 
 ---
 
-## 🔹 How to Run
+##  How to Run
 
 1. Clone this repository:
 ```bash
