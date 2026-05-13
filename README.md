@@ -1,101 +1,23 @@
-# Student Score Prediction Model
+# 🎓 Student Exam Score Predictor
 
-##  Project Overview
-This project focuses on predicting students' exam scores based on various factors such as study hours, attendance, sleep, motivation, and other academic and environmental factors. The goal is to build a **machine learning regression model** that can estimate students' performance and provide insights into which factors contribute most to exam success.
+An end-to-end Machine Learning pipeline and interactive web dashboard built with Python and Streamlit. This project predicts a student's final exam score based on their study habits, school environment, and lifestyle factors.
 
----
+### 🔗 Live Demo
+[Link to your deployed Streamlit app will go here!]
 
-##  Folder Structure
-StudentScorePredictionModel/
-│
-├── StudentScorePrediction.ipynb # Main Jupyter Notebook with EDA, preprocessing, and model training
-├── StudentPerformanceFactors.csv # Dataset (downloaded from Kaggle)
-├── README.md # Project documentation (this file)
-├── LICENSE # License file (optional)
-└── .gitignore # Python gitignore
+## 🚀 Features
+* **Machine Learning Pipeline:** Utilizes `scikit-learn`'s `Pipeline` and `ColumnTransformer` to handle scaling numerical data and one-hot encoding categorical data natively.
+* **Random Forest Regressor:** The core model is trained using a Random Forest algorithm, achieving robust accuracy (R-squared: ~0.77).
+* **Interactive Dashboard:** Built with Streamlit, allowing users to tweak 19 different student features and instantly see the predicted exam score.
 
----
+## 🛠️ Tech Stack
+* **Python:** Data processing and modeling
+* **Scikit-Learn:** Machine Learning (Random Forest, Pipelines, Preprocessing)
+* **Pandas & NumPy:** Data manipulation
+* **Streamlit:** Web application framework
 
-##  Tools & Libraries
-- Python 3.x  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Seaborn  
-- Scikit-learn  
-
-Optional (for advanced models):
-- RandomForestRegressor  
-- GradientBoostingRegressor  
-
----
-
-##  Dataset Description
-The dataset used is **Student Performance Factors** (Kaggle), containing features such as:
-
-| Feature | Description |
-|---------|-------------|
-| Hours_Studied | Number of study hours per day |
-| Attendance | Percentage of classes attended |
-| Sleep_Hours | Average sleep hours per day |
-| Motivation_Level | Self-reported motivation score |
-| Previous_Scores | Scores from previous exams |
-| Teacher_Quality | Teacher evaluation score |
-| Parental_Involvement | Level of parental involvement |
-| Access_to_Resources | Availability of study resources |
-| Tutoring_Sessions | Number of extra tutoring sessions attended |
-| Physical_Activity | Hours of physical activity |
-| Peer_Influence | Influence of peers on study habits |
-| Parental_Education_Level | Education level of parents |
-| Distance_from_Home | Distance from school in km |
-| Gender | Student gender |
-| Internet_Access | Availability of internet at home |
-| School_Type | Type of school attended |
-| Exam_Score | Final exam score (target variable) |
-
-> Some columns had missing values which were handled during preprocessing.
-
----
-
-##  Project Steps
-
-1. **Data Loading**
-   - Load the CSV dataset into a Pandas DataFrame.
-2. **Data Cleaning**
-   - Handle missing values (numeric: median, categorical: mode).  
-   - Encode categorical variables using LabelEncoder.
-3. **Exploratory Data Analysis (EDA)**
-   - Visualize feature distributions, correlations, and outliers.  
-   - Use sampling for large datasets to speed up plotting.
-4. **Feature Selection**
-   - Select relevant features for predicting `Exam_Score`.
-5. **Modeling**
-   - Split dataset into training and testing sets.
-   - Train Linear Regression model (baseline).  
-   - Experiment with Polynomial Regression.  
-   - Advanced models: RandomForestRegressor and GradientBoostingRegressor.
-6. **Model Evaluation**
-   - Evaluate using MAE, MSE, RMSE, and R² score.
-   - Visualize actual vs predicted exam scores.
-7. **Feature Importance**
-   - Identify which features contribute most to predictions (Random Forest/Gradient Boosting).
-
----
-
-##  Results
-
-| Model | R² Score | MAE | RMSE |
-|-------|----------|-----|------|
-| Linear Regression | 0.58 | 1.42 | 2.55 |
-| Random Forest | 0.85+ | - | - |
-| Gradient Boosting | 0.88+ | - | - |
-
-> Random Forest and Gradient Boosting models significantly improved performance over Linear Regression.
-
----
-
-##  How to Run
-
+## 💻 How to Run Locally
 1. Clone this repository:
-```bash
-git clone https://github.com/yourusername/StudentScorePredictionModel.git
+   ```bash
+   git clone [https://github.com/YourUsername/student-score-predictor.git](https://github.com/YourUsername/student-score-predictor.git)
+   cd student-score-predictor
